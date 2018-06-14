@@ -18,3 +18,4 @@ class WP_Crawler_Cron {
 if (class_exists('WP_CLI')) {
     WP_CLI::add_command( 'wp_crawler_cron', 'WP_Crawler_Cron' );
 }
+add_action('wp_crawler_cron','run');
